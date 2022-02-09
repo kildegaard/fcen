@@ -1,0 +1,53 @@
+Informe del archivo 05-0-len-fileparse.py-aye-2020-09-08_11.43.23.py
+====================================================================
+
+Lista de comentarios de mejora del corrector
+********************************************
+
+Línea 31 	  no hace falta poner tipos x default, es algo que le pasás por comandos
+Línea 50 	  buenos nombres de variables!
+
+Lista de comentarios sobre errores del corrector
+************************************************
+
+
+Lista de comentarios del autor
+******************************
+
+Línea 1 	 -*- coding: utf-8 -*-
+Línea 10 	 def parse_csv(nombre_archivo):
+Línea 11 	 '''
+Línea 12 	 Parsea un archivo CSV en una lista de registros
+Línea 13 	 '''
+Línea 14 	 with open(nombre_archivo) as f:
+Línea 15 	 rows = csv.reader(f)
+Línea 17 	 Lee los encabezados
+Línea 18 	 headers = next(rows)
+Línea 19 	 registros = []
+Línea 20 	 for row in rows:
+Línea 21 	 Saltea filas sin datos
+Línea 22 	 continue
+Línea 23 	 registro = dict(zip(headers, row))
+Línea 24 	 registros.append(registro)
+Línea 26 	 return registros
+Línea 29 	 import csv
+Línea 30 	 tuve que poner types str, float, float para que me pueda convertir tanto los precios de 'precios.csv' como los de 'camion.csv' si pongo int, esto no es posible
+Línea 38 	 registros = []
+Línea 39 	 registro = {}
+Línea 41 	 Lee los encabezados del archivo
+Línea 45 	 Si se indicó un selector de columnas,
+Línea 46 	 buscar los índices de las columnas especificadas.
+Línea 47 	 Y en ese caso achicar el conjunto de encabezados para diccionarios
+Línea 56 	 registro = {}
+Línea 58 	 Saltear filas vacías
+Línea 60 	 Filtrar la fila si se especificaron columnas
+Línea 67 	 print(registro)
+Línea 73 	 Saltear filas vacías
+Línea 75 	 Filtrar la fila si se especificaron columnas
+Línea 77 	 falta separar en tuplas si no hay headers, entonces no hago encabezado
+Línea 78 	 print(fila)
+Línea 79 	 registro = dict()
+Línea 83 	 print(registro)
+Línea 88 	 b = sys.modules
+Línea 94 	 if types:
+Línea 95 	 fila = [func(val) for func, val in zip(types, fila) ]

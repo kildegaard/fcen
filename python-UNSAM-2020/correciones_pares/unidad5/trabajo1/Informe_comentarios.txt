@@ -1,0 +1,24 @@
+Informe del archivo 05-0-and-fileparse.py-abr-2020-09-07_00.39.10.py
+====================================================================
+
+Lista de comentarios de mejora del corrector
+********************************************
+
+Línea 9 	  bien el docstring. Quizás le daría un poco más de explicación
+
+Lista de comentarios sobre errores del corrector
+************************************************
+
+
+Lista de comentarios del autor
+******************************
+
+Línea 1 	 fileparse.py
+Línea 13 	 Lee los encabezados del archivo
+Línea 16 	 Si se indicó un selector de columnas,
+Línea 17 	 buscar los índices de las columnas especificadas.
+Línea 18 	 Y achicar el conjunto de encabezados para diccionarios
+Línea 28 	 Saltear filas vacías
+Línea 30 	 Filtrar la fila si se especificaron columnas
+Línea 35 	 Armar el diccionario
+Línea 41 	 Saltear filas vacías

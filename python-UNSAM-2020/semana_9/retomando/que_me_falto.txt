@@ -1,0 +1,4 @@
+Hice todos los obligatorios
+El ultimo, ticker.py no me termino de funcionar con el tema de formatear a txt y eso... pero ya no me da el bocho jaja
+
+los obligatorios no los hice, quiero hacerlos cuando pueda!!

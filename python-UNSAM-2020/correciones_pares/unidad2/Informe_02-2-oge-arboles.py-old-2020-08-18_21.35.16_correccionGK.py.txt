@@ -1,0 +1,23 @@
+Informe del archivo 02-2-oge-arboles.py-old-2020-08-18_21.35.16_correccionGK.py
+===============================================================================
+
+Lista de comentarios de mejora del corrector
+********************************************
+
+Línea 8 	 Copado el método .readlines()! Te lo robo
+Línea 18 	 Muy bueno el uso del -> Tuve que googlear para ver que es una anotación! Segundo robo xD
+Línea 28 	 Me parece poco claro el return, seguramente se puede hacer de otra forma!
+Línea 41 	 Gracias por enseñarme esto (isinstance). Pero dado que es TU código, no hace falta que lo chequees!
+Línea 59 	 esto está bueno para ahorrar líneas pero, en mi opinión, perdés legibilidad de código
+
+Lista de comentarios sobre errores del corrector
+************************************************
+
+
+Lista de comentarios del autor
+******************************
+
+Línea 6 	 obtenemos los encabezados
+Línea 10 	 abrimos el archivo y guardamos los datos(dicc) en una lista arboles
+Línea 32 	 print(len(arboles_en_parque))
+Línea 66 	 print(obtener_alturas(lista_parques=['GENERAL PAZ', 'EJERCITO DE LOS ANDES', 'CENTENARIO'], especie='Jacarandá'))

@@ -1,0 +1,17 @@
+{
+  "name": "electron-test",
+  "version": "0.0.0",
+  "authors": [
+    "pezholio <pezholio@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "handsontable": "~0.16.1",
+    "jquery": "~2.1.4",
+    "jquery-csv": "*",
+    "bootstrap": "3.3.5",
+    "bootstrap-tagsinput": "0.8.0",
+    "lodash": "~3.10.1",
+    "components-font-awesome": "*"
+  }
+}

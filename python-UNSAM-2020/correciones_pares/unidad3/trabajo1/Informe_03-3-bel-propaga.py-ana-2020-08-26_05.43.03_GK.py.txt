@@ -1,0 +1,34 @@
+Informe del archivo .\03-3-bel-propaga.py-ana-2020-08-26_05.43.03_GK.py
+=======================================================================
+
+Lista de comentarios de mejora del corrector
+********************************************
+
+Línea 11 	  Nombre de variables poco explicativas
+Línea 13 	  Hacer esto con try-except me parece un approach equivocado
+Línea 18 	  esta forma de "guardar un 1" es bastante confusa, no la recomiendo
+
+Lista de comentarios sobre errores del corrector
+************************************************
+
+Línea 28 	  Problemas con la identación
+Línea 31 	  Uso del append un poco controversial
+
+Lista de comentarios del autor
+******************************
+
+Línea 1 	 -*- coding: utf-8 -*-
+Línea 12 	 Con el enumerate me guardo las posiciones
+Línea 15 	 Si es 1 que guarde su valor
+Línea 17 	 si a la izquierda del 1 hay 0
+Línea 19 	 entonces que guarde un 1
+Línea 20 	 si a la derecha del 1 hay 0
+Línea 21 	 entonces que guarde un 1
+Línea 22 	 Si a la izquierda hay -1
+Línea 23 	 Entonces que mantenga el -1
+Línea 24 	 Si a la derecha hay -1
+Línea 25 	 Entonces que mantenga el -1
+Línea 27 	 En el siguiente if, la idea es 'engancharlo cuando se completa el if anterior, pero no pude lograrlo!
+Línea 29 	 Si quedo algun cero me aseguro de que ahora no tengo un 1 al lado
+Línea 38 	 Esto es para que no corte el ciclo cuando quiere evaluar valores que se salen del rango
+Línea 40 	 Me falta un valor.. es el primer cero que no se evalua nunca. Intento salvarlo con el if==0 pero no hay caso

@@ -1,0 +1,24 @@
+# OS artefacts
+.DS_Store
+
+# IDE artefacts
+.idea/
+
+# logs
+npm-debug.log
+debug.log
+
+# built by npm
+bower_components/
+node_modules/
+
+# electron package compilation
+packages
+
+
+_site
+comma-chameleon/views
+bin
+views/*.html
+!views/views-content/*.html
+!views/layouts/*.html

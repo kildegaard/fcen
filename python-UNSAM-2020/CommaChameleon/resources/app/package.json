@@ -1,0 +1,49 @@
+{
+  "name": "comma-chameleon",
+  "author": "The ODI",
+  "description": "A Desktop CSV Editor",
+  "version": "0.5.1",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "gulp prebuild && NODE_ENV=development electron .",
+    "test": "electron-mocha test/main/ && electron-mocha --renderer --no-timeouts test/renderer/",
+    "test-main": "electron-mocha test/main/",
+    "test-renderer": "electron-mocha --renderer --no-timeouts test/renderer/",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theodi/comma-chameleon.git"
+  },
+  "dependencies": {
+    "escape-regexp": "0.0.1",
+    "mkdirp": "^0.5.1",
+    "node-zip": "^1.1.1",
+    "os-tmpdir": "^1.0.1",
+    "request": "^2.72.0",
+    "slug": "^0.9.1",
+    "temp": "^0.8.3",
+    "xlsx": "^0.8.0",
+    "electron-debug": "^0.6.0"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "electron-mocha": "^2.1.0",
+    "electron-prebuilt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "handlebars": "^4.0.5",
+    "handlebars-layouts": "^3.1.3",
+    "jshint": "^2.9.4",
+    "pryjs": "^1.0.2",
+    "sinon": "^1.17.3",
+    "yargs": "^4.7.1"
+  },
+  "build": {
+    "appId": "com.theodi.commachameleon",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  }
+}

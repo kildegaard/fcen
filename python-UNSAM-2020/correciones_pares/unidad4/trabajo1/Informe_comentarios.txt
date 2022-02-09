@@ -1,0 +1,23 @@
+Informe del archivo ..\unidad4\trabajo1\04-1-rla-envido.py-mca-2020-09-02_13.01.20_GK.py
+========================================================================================
+
+Lista de comentarios de mejora del corrector
+********************************************
+
+Línea 9 	  Yo hubiera puesto primero las definiciones y luego la parte de scripting
+Línea 14 	  linea no necesaria
+Línea 46 	  interesante forma de evaluar los envidos!
+Línea 58 	  bien usadas las list comprehension
+Línea 59 	  nombre de variables poco descriptivas
+Línea 72 	  La parte de las probabilidades se podría haber hecho todo de una
+
+Lista de comentarios sobre errores del corrector
+************************************************
+
+
+Lista de comentarios del autor
+******************************
+
+Línea 1 	 -*- coding: utf-8 -*-
+Línea 10 	 envido.py
+Línea 56 	 print(envido_31(naipes))

@@ -1,0 +1,19 @@
+Informe del archivo .\04-1-tin-envido.py-mar-2020-08-26_19.23.21_GK.py
+======================================================================
+
+Lista de comentarios de mejora del corrector
+********************************************
+
+Línea 14 	 : faltan docstrings
+Línea 20 	  interesante forma de llamar al counter!
+Línea 25 	  nombre de variables poco descriptivos
+Línea 35 	  hardcodeo del nro de repeticiones
+
+Lista de comentarios sobre errores del corrector
+************************************************
+
+
+Lista de comentarios del autor
+******************************
+
+Línea 2 	 -*- coding: utf-8 -*-
