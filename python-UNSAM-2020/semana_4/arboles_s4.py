@@ -46,7 +46,8 @@ def leer_arboles(nombre_archivo):
     with open(nombre_archivo, 'rt', encoding='utf-8') as file:
         filas = csv.reader(file)
         headers = next(filas)
-        lista_de_arboles = [{key: value for key, value in zip(headers, fila)} for fila in filas]
+        lista_de_arboles = [{key: value for key,
+                             value in zip(headers, fila)} for fila in filas]
     return lista_de_arboles
 
 
@@ -152,13 +153,15 @@ def especie_promedio_mas_inclinada(lista_arboles):
 def medidas_de_especies(especies, arboleda):
     diccionario = {}
     for especie in especies:
-        lista_especie = [(float(arbol['diametro']), float(arbol['altura_tot'])) for arbol in arboleda if arbol['nombre_com'] == especie]
+        lista_especie = [(float(arbol['diametro']), float(arbol['altura_tot']))
+                         for arbol in arboleda if arbol['nombre_com'] == especie]
         diccionario[especie] = lista_especie
     return diccionario
 
 
 def medidas_de_especie(especie, arboleda):
-    lista = [(float(arbol['diametro']), float(arbol['altura_tot'])) for arbol in arboleda if arbol['nombre_com'] == especie]
+    lista = [(float(arbol['diametro']), float(arbol['altura_tot']))
+             for arbol in arboleda if arbol['nombre_com'] == especie]
     return lista
 
 
@@ -240,7 +243,8 @@ def main(argumentos):
     colors = np.random.rand(N)
     plt.xlabel('Diámetro (cm)')
     plt.ylabel('Altura (m)')
-    plt.title(f'Relación altura/diámetro para la especie {especies[0]} en Buenos Aires')
+    plt.title(
+        f'Relación altura/diámetro para la especie {especies[0]} en Buenos Aires')
     plt.scatter(diam1, altura1, s=area, alpha=0.5, c=colors)
     plt.savefig('graf_Eucalipto', dpi=300)
     plt.show()
@@ -256,7 +260,8 @@ def main(argumentos):
     colors = np.random.rand(N)
     plt.xlabel('Diámetro (cm)')
     plt.ylabel('Altura (m)')
-    plt.title(f'Relación altura/diámetro para la especie {especies[1]} en Buenos Aires')
+    plt.title(
+        f'Relación altura/diámetro para la especie {especies[1]} en Buenos Aires')
     plt.scatter(diam2, altura2, s=area, alpha=0.5, c=colors)
     plt.savefig('graf_Palo_Borracho.png', dpi=300)
     plt.show()
@@ -272,7 +277,8 @@ def main(argumentos):
     colors = np.random.rand(N)
     plt.xlabel('Diámetro (cm)')
     plt.ylabel('Altura (m)')
-    plt.title(f'Relación altura/diámetro para la especie {especies[2]} en Buenos Aires')
+    plt.title(
+        f'Relación altura/diámetro para la especie {especies[2]} en Buenos Aires')
     plt.scatter(diam3, altura3, s=area, alpha=0.5, c=colors)
     plt.savefig('graf_Jacaranda.png', dpi=300)
     plt.show()
